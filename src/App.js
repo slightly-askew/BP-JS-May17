@@ -1,14 +1,13 @@
 //@flow
 
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as actionCreators from './data/actions/actionCreators';
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import * as actionCreators from "./data/actions/actionCreators";
 
-import Main from './scenes/Main';
+import Main from "./scenes/Main";
 
 function mapStateToProps(): {} {
-  return {
-  };
+  return {};
 }
 
 export function mapDispatchToProps(dispatch: {}) {

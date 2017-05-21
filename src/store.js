@@ -1,9 +1,9 @@
 //@flow
 
-import { createStore, compose, applyMiddleware } from 'redux';
-import { routerMiddleware } from 'react-router-redux';
-import createHistory from 'history/createBrowserHistory';
-import reducers from './data/reducers';
+import { createStore, compose, applyMiddleware } from "redux";
+import { routerMiddleware } from "react-router-redux";
+import createHistory from "history/createBrowserHistory";
+import reducers from "./data/reducers";
 
 const defaultState = {};
 
