@@ -17,7 +17,7 @@
     "react-router-redux": "^5.0.0-alpha.5",
     "react-sizeme": "^2.3.1",
     "recompose": "^0.22.0",
-    "styled-components": "next",
+    "styled-components": "^1.4.6",
     "webfontloader": "^1.6.27"
   },
   "devDependencies": {
