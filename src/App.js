@@ -6,7 +6,7 @@ import * as actionCreators from './data/actions/actionCreators';
 
 import Main from './scenes/Main';
 
-function mapStateToProps(state) {
+function mapStateToProps(): {} {
   return {
   };
 }

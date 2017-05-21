@@ -1,3 +1,4 @@
+//@flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -8,6 +9,12 @@ import { ConnectedRouter as Router } from 'react-router-redux';
 import store, { history } from './store';
 
 import App from './App';
+
+declare var module : {
+  hot : {
+    accept(path:string, callback:() => void): void;
+  };
+};
 
 const render = (Component) => {
     return ReactDOM.render(
@@ -23,8 +30,8 @@ const render = (Component) => {
 render(App);
 
 if (module.hot) {
-    module.hot.accept(App, () => {
-        const NextApp = require(App).default;
+    module.hot.accept('App', () => {
+        const NextApp = require('./App').default;
         render(NextApp);
     });
 }
