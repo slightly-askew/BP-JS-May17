@@ -12,7 +12,7 @@ import App from "./App";
 
 declare var module: {
   hot: {
-    accept(path: string, callback: () => void): void
+    accept(path: Class<React$Component<*, *, *>>, callback: () => void): void
   }
 };
 
@@ -30,7 +30,7 @@ const render = Component => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept("App", () => {
+  module.hot.accept(App, () => {
     const NextApp = require("./App").default;
     render(NextApp);
   });
