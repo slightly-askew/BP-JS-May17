@@ -23,7 +23,7 @@
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "flow-bin": "^0.42.0",
-    "react-scripts": "0.9.5",
+    "react-scripts": "^1.0.3",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0"
   },
