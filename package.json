@@ -22,10 +22,9 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "flow-bin": "^0.42.0",
-    "react-scripts": "^1.0.3",
-    "stylelint": "^7.10.1",
-    "stylelint-config-standard": "^16.0.0"
+    "react-scripts": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +32,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "lint:css": "stylelint \"./src/components/**/*.js\"",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
